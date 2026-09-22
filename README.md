@@ -96,7 +96,7 @@ GROQ_API_KEY=gsk_dein_api_schluessel_hier
 ```
 
 * **Wie erstelle ich einen kostenlosen Groq API Key?**
-  1. Öffne die Groq Console ([https://console.groq.com/](https://console.groq.com/)) und erstelle ein kostenloses Konto.
+  1. Öffne die Groq Console unter [https://console.groq.com/](https://console.groq.com/) und erstelle ein kostenloses Konto.
   2. Klicke im Menü links auf API Keys (oder direkt [https://console.groq.com/keys](https://console.groq.com/keys)).
   3. Klicke auf Create API Key, vergib einen beliebigen Namen (z. B. `pdf-summarizer-web`) und kopiere den Schlüssel.
 
@@ -107,13 +107,13 @@ uvicorn app:app --port 8000 --reload
 ```
 
 Öffne deinen Browser unter:
-👉 `[http://127.0.0.1:8000](http://127.0.0.1:8000)`
+👉 [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
 ## 🖥 Bedienung & Anleitung
 
-1. **Startseite aufrufen:** Öffne `[http://127.0.0.1:8000](http://127.0.0.1:8000)` im Browser. Es erscheint die aufgeräumte Dark-Mode-Oberfläche mit dem Upload-Feld.
+1. **Startseite aufrufen:** Öffne [http://127.0.0.1:8000](http://127.0.0.1:8000) im Browser. Es erscheint die aufgeräumte Dark-Mode-Oberfläche mit dem Upload-Feld.
 2. **Dokument auswählen:** Ziehe eine beliebige PDF-Datei per Drag & Drop in das markierte Feld oder klicke darauf, um den Datei-Explorer zu öffnen.
 3. **Validierung abwarten:** Dateiname und Dateigröße werden sofort angezeigt. Der Button **"Zusammenfassen"** wird aktiv.
 4. **Zusammenfassung starten:** Klicke auf den Button. Ein Lade-Spinner signalisiert die asynchrone Textextraktion und KI-Verarbeitung.
@@ -134,7 +134,7 @@ uvicorn app:app --port 8000 --reload
   ```
 
 * **Browser lädt ewig:**
-  Achte darauf, exakt `[http://127.0.0.1:8000](http://127.0.0.1:8000)` in die Adressleiste einzutippen und nicht versehentlich eine Websuche oder `about:blank` aufzurufen.
+  Achte darauf, exakt [http://127.0.0.1:8000](http://127.0.0.1:8000) in die Adressleiste einzutippen und nicht versehentlich eine Google-Suche oder `about:blank` aufzurufen.
 
 ---
 
