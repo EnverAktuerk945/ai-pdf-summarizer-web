@@ -134,7 +134,7 @@ uvicorn app:app --port 8000 --reload
   ```
 
 * **Browser lädt ewig:**
-  Achte darauf, exakt `[http://127.0.0.1:8000](http://127.0.0.1:8000)` in die Adressleiste einzutippen und nicht versehentlich eine Google-Suche oder `about:blank` abzuschicken[cite: 8].
+  Achte darauf, exakt `[http://127.0.0.1:8000](http://127.0.0.1:8000)` in die Adressleiste einzutippen und nicht versehentlich eine Websuche oder `about:blank` aufzurufen.
 
 ---
 
