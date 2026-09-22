@@ -1,6 +1,16 @@
+# Virtuelle Umgebung
 .venv/
+env/
+ENV/
+
+# Python Cache
 __pycache__/
-*.pyc
-.DS_Store
+*.py[cod]
+
+# Umgebungsvariablen (Niemals API-Keys ins Repo committen!)
 .env
-uploads/
+
+# Temporäre Verzeichnisse & Logs
+uploads/*
+!uploads/.gitkeep
+*.log
