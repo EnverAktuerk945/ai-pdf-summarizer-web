@@ -14,3 +14,4 @@ __pycache__/
 uploads/*
 !uploads/.gitkeep
 *.log
+.DS_Store
