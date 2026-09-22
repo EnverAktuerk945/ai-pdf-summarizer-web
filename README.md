@@ -6,13 +6,17 @@ Die Anwendung nutzt eine entkoppelte Client-Server-Architektur: Ein performantes
 
 ---
 
+![Web UI Screenshot](docs/screenshot-web.png)
+
+---
+
 ## ✨ Features
 
 * **Non-blocking Async Architecture:** Vollständig asynchrone Request-Verarbeitung via FastAPI (`async` / `await`) für blockierungsfreie I/O-Vorgänge beim Datei-Upload und API-Routing.
 * **Drag-and-Drop & Reaktives UI:** Intuitives Upload-Interface mit Dateivalidierung im Browser, animiertem Ladeindikator und One-Click-Clipboard-Kopierfunktion.
 * **Automatisches Dokumenten-Parsing:** Schnelle Extraktion von Plain-Text aus mehrseitigen PDFs mittels modularer `pypdf`-Pipeline.
 * **High-Speed KI-Inferenz:** Direkte Anbindung an die Groq-Cloud-API (`qwen/qwen3.8-27b`) für strukturierte Zusammenfassungen in Sekundenschnelle.
-* **Enterprise Error Handling:** Dediziertes Abfangen von ungültigen Dateiformaten, Scans ohne Textschicht, fehlenden API-Schlüsseln und API-Rate-Limits mit semantischen HTTP-Statuscodes (400, 422, 500, 502).
+* **Robustes HTTP-Error-Handling:** Dediziertes Abfangen von ungültigen Dateiformaten, Scans ohne Textschicht, fehlenden API-Schlüsseln und API-Rate-Limits mit semantischen HTTP-Statuscodes (400, 422, 500, 502).
 * **Automatisches Ressourcenmanagement:** Sichere temporäre Dateispeicherung im Dateisystem mit deterministischer Bereinigung im `finally`-Block nach Abschluss des Requests.
 * **Standardisiertes Logging:** Vollständige Protokollierung aller Prozessschritte über Pythons internes `logging`-Modul mit Zeitstempeln und Loglevels (`INFO`, `WARNING`, `ERROR`).
 * **Saubere Architektur:** Strikte Trennung von Datenaustausch (`app.py`), PDF-Extraktion (`src/pdf_reader.py`) und KI-Prompt-Logik (`src/ai_agent.py`).
@@ -36,6 +40,7 @@ Die Anwendung nutzt eine entkoppelte Client-Server-Architektur: Ein performantes
 
 ```text
 ai-pdf-summarizer-web/
+├── docs/                      # Screenshots und Dokumentations-Assets
 ├── static/
 │   ├── css/
 │   │   └── style.css          # Modernes Responsive Dark-Design
