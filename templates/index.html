@@ -15,11 +15,11 @@
 
         <main>
             <section class="upload-section">
-                <form id="uploadForm">
+                <form id="uploadForm" novalidate>
                     <div class="drop-zone" id="dropZone">
                         <span class="drop-zone-icon">📁</span>
                         <p class="drop-zone-text">PDF hierher ziehen oder <strong>durchsuchen</strong></p>
-                        <input type="file" id="fileInput" name="file" accept=".pdf" required hidden>
+                        <input type="file" id="fileInput" name="file" accept=".pdf" hidden>
                     </div>
                     <div id="fileInfo" class="file-info hidden">
                         <span id="fileName"></span>
